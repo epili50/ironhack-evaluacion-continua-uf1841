@@ -14,7 +14,12 @@
         .dice {
             display: flex;
             border: 1px solid black;
-            width: 300px;
+            width: 300px; 
+            /* respuesta:*/
+            align-items: center;
+            justify-content: space-around;
+            height: 300px;
+            
         }
 
         .dice>div {
@@ -23,6 +28,7 @@
             border-radius: 50%;
             background-color: black;
         }
+ 
     </style>
 
 </head>
@@ -36,22 +42,22 @@
         <h2>Dada esta regla CSS</h2>
         <img src="cssrule.png" alt="">
         <ol>
-            <li>¿Qué tipo de selector CSS es? <span>Respuesta: Es un selector de...<del>id</del> </span></li>
-            <li>¿Cuantas propiedades CSS establece este selector? <span>Respuesta:</span></li>
-            <li>¿Cuál es el valor de la segunda propiedad? <span>Respuesta:</span></li>
+            <li>¿Qué tipo de selector CSS es? <span>Respuesta: Es un selector de clase  </span></li>             
+            <li>¿Cuantas propiedades CSS establece este selector? <span>Respuesta: dos</span></li>
+            <li>¿Cuál es el valor de la segunda propiedad? <span>Respuesta: el tamaño de la letra es de 18 píxeles</span></li>
         </ol>
         <h2>Analiza el siguiente tag img</h2>
-        <img src="tagimg.png" alt="">
+        <img src="tagimg.png">
         <ol>
-            <li>¿Cuantos atributos tiene este tag? <span>Respuesta:</span></li>
-            <li>¿Cuál es el valor del atributo <i>src</i>? <span>Respuesta:</span></li>
+            <li>¿Cuantos atributos tiene este tag? <span>Respuesta: Tres: Source, Alternative y Style</span></li>
+            <li>¿Cuál es el valor del atributo <i>src</i>? <span>Respuesta: "/w3images/team2.jpg"</span></li>
             <li>Imagina que tenemos la siguiente reglas CSS. ¿Crees que el tamaño de la imagen sería de 1000px? ¿Por
                 qué? <img src="big-image.png" alt=""> </li>
-            <p><span>Respuesta:</span></p>
+            <p><span>Respuesta: No. Porque tiene una regla CSS en línea que marca el width en 100% y esta tiene más especificidad que un selector de atributo</span></p>
         </ol>
         <h2>¿Cuál es el valor de la propiedad <i>font-weight</i> de este botón?</h2>
         <button type="button" onclick="alert('Hello world!')">Click Me!</button>
-        <p><span>Respuesta: </span></p>
+        <p><span>Respuesta: pico-font-weight, valor puesto por la hoja de estilo PicoCSS</span></p>
     </div>
     <div class="container">
         <h2>Crea un dado que muestre la cara del "dos" usando flex adecuadamente.</h2>
@@ -59,6 +65,7 @@
             propiedaes CSS de forma
             adecuada al selector .dice para conseguirlo</p>
         <div class="dice">
+            
             <div></div>
             <div></div>
         </div>
