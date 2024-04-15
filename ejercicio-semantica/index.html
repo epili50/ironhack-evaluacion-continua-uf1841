@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html>
+<!-- Primero error falta la lengua: se pone español -->
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
+     <!-- Pongo los siguientes elementes faltantes en el head -->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -86,17 +90,19 @@
 <body>
     <div class="masthead">
         <h1>New York Times</h1>
-        <div style="display: flex; gap: 1rem;">
-            <div>
-                <a href="world.html">Mundo</a>
+        <nav>
+            <div style="display: flex; gap: 1rem;">
+                <div>
+                    <a href="world.html">Mundo</a>
+                </div>
+                <div>
+                    <a href="sports.html">Deportes</a>
+                </div>
+                <div>
+                    <a href="local.html">Local</a>
+                </div>
             </div>
-            <div>
-                <a href="sports.html">Deportes</a>
-            </div>
-            <div>
-                <a href="local.html">Local</a>
-            </div>
-        </div>
+        </nav>
     </div>
     <div class="content">
         <div class="main-article">
@@ -105,12 +111,16 @@
                 <p>15 de abril de 2024</p>
             </div>
             <div>
-                <h3>Más de 100 hogares destruidos</h3>
-                <p>Un incendio forestal ha arrasado una vasta área en el norte de California, destruyendo más de 100
-                    hogares y forzando la evacuación de miles de residentes.</p>
-                <h4>Causas aún desconocidas</h4>
-                <p>Las autoridades aún están investigando las causas del incendio, que comenzó el pasado fin de semana y
-                    se ha extendido rápidamente debido a las condiciones climáticas adversas.</p>
+                <section>
+                    <h3>Más de 100 hogares destruidos</h3>
+                    <p>Un incendio forestal ha arrasado una vasta área en el norte de California, destruyendo más de 100
+                        hogares y forzando la evacuación de miles de residentes.</p>
+                </section>
+                <section>
+                    <h4>Causas aún desconocidas</h4>
+                    <p>Las autoridades aún están investigando las causas del incendio, que comenzó el pasado fin de semana y
+                        se ha extendido rápidamente debido a las condiciones climáticas adversas.</p>
+                </section>
             </div>
             <div>
                 <h3>Despliegue masivo de bomberos</h3>
@@ -141,26 +151,34 @@
             </div>
         </div>
         <div class="other-news">
-            <h2>También en las noticias</h2>
-            <div class="collapsabile">
-                <div class="teaser-text">Desfile del Día de la Independencia</div>
-                <p>Miles de personas se reunieron en las calles de la ciudad para celebrar el Día de la Independencia
-                    con un colorido desfile y eventos festivos.</p>
-            </div>
-            <div class="collapsabile">
-                <div class="teaser-text">Nuevas restricciones de viaje</div>
-                <p>El gobierno anuncia nuevas restricciones de viaje debido al aumento de casos de COVID-19 en todo el
-                    país, afectando a millones de personas que planeaban vacaciones.</p>
-            </div>
-            <div class="collapsabile">
-                <div class="teaser-text">Lanzamiento de un nuevo satélite</div>
-                <p>Una empresa espacial lanza con éxito un nuevo satélite de comunicaciones que proporcionará cobertura
-                    mejorada en áreas remotas y rurales.</p>
-            </div>
-        </div>
+            <aside>
+                <h2>También en las noticias</h2>
+                <div class="collapsabile">
+                    <article>
+                        <div class="teaser-text"><h5>Desfile del Día de la Independencia</h5></div>
+                        <p>Miles de personas se reunieron en las calles de la ciudad para celebrar el Día de la Independencia
+                            con un colorido desfile y eventos festivos.</p>
+                    </article>
+                </div>
+                <div class="collapsabile">
+                    <article>
+                        <div class="teaser-text"><h5>Nuevas restricciones de viaje</h5></div>
+                        <p>El gobierno anuncia nuevas restricciones de viaje debido al aumento de casos de COVID-19 en todo el
+                            país, afectando a millones de personas que planeaban vacaciones.</p>
+                    </article>
+                </div>
+                <div class="collapsabile">
+                    <article>
+                        <div class="teaser-text"><h5>Lanzamiento de un nuevo satélite</h5></div>
+                        <p>Una empresa espacial lanza con éxito un nuevo satélite de comunicaciones que proporcionará cobertura
+                            mejorada en áreas remotas y rurales.</p>
+                    </article>
+                </div>
+            </aside>
+         </div>
     </div>
-    <div class="page-bottom">
-        <span class="legal">Copyright 2024, New York Times</span>
+           <div class="page-bottom">
+        <footer><span class="legal">Copyright 2024, New York Times</span></footer>
     </div>
 </body>
 
