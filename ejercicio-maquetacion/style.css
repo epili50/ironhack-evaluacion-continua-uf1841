@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+.caja {
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+}
+
+.caja:hover{
+    box-shadow:0 8px 12px 0 rgba(0,0,0,0.2);
+}
+
+.caja.pro:hover{
+    box-shadow: 0 8px 12px 0 rgb(104,104,171, 0.8); 
+}
+
+.caja > *{
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 3rem;
+}
+
+.caja__plan{
+    background-color: black;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.caja__plan.pro{
+    background-color: #6868AC;
+}
+
+.caja__boton, .caja__precio{
+    background-color: #F3F5F7;
+}
+
+.caja__boton__registro{
+   color: white; 
+   background-color: #6868AC;
+   border: none;
+   padding: 0.5rem 2rem;
+}
